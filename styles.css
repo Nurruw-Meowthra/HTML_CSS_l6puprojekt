@@ -1,0 +1,135 @@
+/* FONTS */
+    /* Archivo Black */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    /* Chakra Petch */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    /* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* !!! NAVBAR STUFF !!! */
+    /* Navbar container */
+    .navbar {
+        overflow: hidden;
+        background-color: #3A3A3A;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* logo */
+    .nav-logo {
+    float: left;
+    margin: 5px;
+    width: 125px;
+    height: 60px;
+    background-image: url(photos/helldivers-skull-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.6s;
+    }
+
+    /* logo hover efect */
+    .nav-logo:hover {
+        background-image: url(photos/helldivers-skull-red.png);
+        filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+    }
+
+    /*  */
+    .title {
+        font-family: "Archivo Black";
+        color: #E0E0E0;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* The dropdown container */
+    .dropdown {
+        float: right;
+        overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropbtn {
+        font-size: 30px;
+        border: none;
+        outline: none;
+        color: #E0E0E0;
+        padding: 15px 20px;
+        background-color: inherit;
+        margin: 0 15px;
+        font-family: "Archivo Black";
+    }
+
+    /* Add a background color to navbar links on hover */
+    .dropdown:hover .dropbtn {
+        background-color: #ffed35;
+        color: #222222;
+    }
+
+    .dropdown-block {
+        display: block;
+        background: #222222;
+        border-radius: 10px;
+    }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #222222; /* Must kast */
+            min-width: 200px;
+
+            border-radius: 10px;
+
+            margin-top: 10px; 
+            margin-right: 10px;
+
+            right: 0; 
+
+            border: 8px solid #ffe800;
+            overflow: hidden;
+            z-index: 100;
+            font-family: "Chakra Petch";
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: #A0A0A0;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ffed35;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+    .dropbtn:hover, 
+    .dropdown:focus-within .dropbtn {
+        background-color: #ffe800;
+        color: #222222;
+        cursor: pointer;
+    }
+
+
+/* Card show */
