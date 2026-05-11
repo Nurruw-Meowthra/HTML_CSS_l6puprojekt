@@ -18,6 +18,17 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Archivo Black';
+}
+h2, h3 {
+    font-family: 'Chakra Petch';
+}
+.btn-primary {
+    background-color: #ffe800;
+    color: #222222;
+}
+
 /* !!! NAVBAR STUFF !!! */
     /* Navbar container */
     .navbar {
@@ -31,8 +42,8 @@ body {
     .nav-logo {
     float: left;
     margin: 5px;
-    width: 125px;
-    height: 60px;
+    width: 115px;
+    height: 50px;
     background-image: url(photos/helldivers-skull-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -50,7 +61,7 @@ body {
     .title {
         font-family: "Archivo Black";
         color: #E0E0E0;
-        font-size: 23px;
+        font-size: 18px;
         display: flex;
         align-items: center;
     }
@@ -63,14 +74,13 @@ body {
 
     /* Dropdown button */
     .dropbtn {
-        font-size: 30px;
+        font-size: 25px;
         border: none;
         outline: none;
         color: #E0E0E0;
         padding: 15px 20px;
         background-color: inherit;
         margin: 0 15px;
-        font-family: "Archivo Black";
     }
 
     /* Add a background color to navbar links on hover */
@@ -89,7 +99,7 @@ body {
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #222222; /* Must kast */
+            background-color: #222222; /* black box */
             min-width: 200px;
 
             border-radius: 10px;
@@ -132,4 +142,42 @@ body {
     }
 
 
-/* Card show */
+/* Card tabel */
+.card-tabel {
+    background: #ffe800 url(photos/hd2_background.jpeg) no-repeat center center/cover;
+    min-height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    height: 400px;
+    background:#B3A300;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    padding: 20px;
+
+    border: #ffed35 solid 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+#head {
+    color: #FBFBFB;
+}
+#text {
+    color: #E0E0E0;
+}
