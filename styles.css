@@ -174,14 +174,21 @@ p {
     border: #ffed35 solid 15px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+
+    transition: transform 0.2s ease 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-3.7px);
 }
 
 /* Card divider */
     .card-divider {
-    width: 112%;          /* Joon ulatub servast servani */
-    border: none;         /* Eemaldame vaikimisi piirjoone */
-    border-top: 2px dashed #FBFBFB; /* Katkendlik joon kaardi raami värvi */
-    margin: 10px 0;      /* Lisab veidi vaba ruumi üles ja alla */
+    
+    width: 112%;
+    border: none;
+    border-top: 2px dashed #FBFBFB;
+    margin: 10px 0;
     opacity: 0.8;
     }
 
@@ -213,3 +220,34 @@ p {
         transition: background-color 0.6s, color 1s;
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
     }
+
+/* Card & Content divider */
+.card-content-footer-divider {
+    border: none;
+    border-top: 3px solid #FBFBFB;
+}
+
+/* Front page */
+/* CONTENT */
+
+    .home-content {
+        background: #3A3A3A;
+        align-items: center;
+        text-align: center;
+        padding: 60px 240px 60px 240px;
+    }
+    .content-heading {
+        margin-bottom: 25px;
+    }
+    .content-text {
+        margin-bottom: 15px;
+    }
+
+/* FOOTER */
+#footer {
+    background: #3A3A3A;
+    color: #FBFBFB;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
