@@ -32,11 +32,20 @@ p {
     color: #222222;
 }
 
+/* Text colors */
+    .bghead {
+        color: #FBFBFB;
+    }
+    .bgtext {
+        color: #E0E0E0;
+    }
+
+
 /* !!! NAVBAR STUFF !!! */
     /* Navbar container */
     .navbar {
         overflow: hidden;
-        background-color: #3A3A3A;
+        background-color: #222222;
         display: flex;
         justify-content: space-between;
     }
@@ -145,6 +154,23 @@ p {
     }
 
 
+/* Yellow Border on sides */
+.yellow_side {
+    border-left: 50px solid #ffe800;
+    border-right: 50px solid #ffe800;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* This rule tells the header to ignore body limits */
+.yellow_side header {
+    margin-left: -50px;
+    margin-right: -50px;
+    display: block;
+}
+
+
 /* Card tabel */
 .card-tabel {
     background: #ffe800 url(photos/hd2_background.jpeg) no-repeat center center/cover;
@@ -192,14 +218,6 @@ p {
     opacity: 0.8;
     }
 
-    /* Card content */
-    #head {
-        color: #FBFBFB;
-    }
-    #text {
-        color: #E0E0E0;
-    }
-
     /* Read more button */
     .readbtn a {
         text-decoration: none;
@@ -235,6 +253,7 @@ p {
         align-items: center;
         text-align: center;
         padding: 60px 240px 60px 240px;
+        
     }
     .content-heading {
         margin-bottom: 25px;
@@ -250,4 +269,54 @@ p {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 35px;
+}
+
+
+/* ------------- */
+/* Collection stuff */
+/* ------------- */
+
+
+.collection-content {
+    background: #3A3A3A;
+    align-items: center;
+    text-align: center;
+    padding: 60px 240px 60px 240px;
+}
+.collection-heading {
+    margin-bottom: 60px;
+}
+.collection-text {
+    margin-bottom: 95px;
+}
+.compressor-start-text {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+/* species box */
+.species-box {
+    /* empty */
+}
+.species-heading {
+    text-align: left;
+}
+.species-stat-text {
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+.species-bubble-box {
+    width: 250px;
+    height: 100px;
+    background:#A0A0A0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
 }
